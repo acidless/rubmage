@@ -1,0 +1,43 @@
+// Variables
+@import 'variables';
+
+@font-face {
+  font-family: 'Archive';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Archive'), url('../media/fonts/Archive.otf') format('otf');
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  transition: 0.3s width ease;
+}
+::-webkit-scrollbar-track {
+  background: var(--menu-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--orange);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  transition: 0.3s background-color, color ease-in-out;
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--font-family-sans-serif);
+}
+
+@import 'typography';
+@import 'images-icons';
+@import 'blocks';
+@import 'buttons-links';
+@import 'loaders';
+@import 'inputs';
+@import 'forms';
+
+@import 'media';

@@ -1,0 +1,36 @@
+.dialogs {
+  align-self: stretch;
+  min-width: 15em;
+  max-width: 35em;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 25em;
+  background: var(--menu-bg);
+  position: relative;
+
+  &__navigate {
+    padding: 0.5em 1em;
+    user-select: none;
+  }
+
+  &__dialogs {
+    padding: 0.5em 1em;
+  }
+
+  &__drag {
+    cursor: e-resize;
+    position: absolute;
+    width: 2em;
+    top: 0;
+    bottom: 0;
+    right: -1em;
+  }
+
+  &__search {
+    margin-left: 0.5em;
+    border: none;
+    flex: 1;
+    width: 0;
+  }
+}

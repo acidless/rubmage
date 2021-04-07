@@ -1,0 +1,20 @@
+.dialog {
+  display: grid;
+  grid-template-columns: 5em minmax(70%, 90%);
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  &__avatar {
+    margin-right: 1em;
+  }
+
+  &__name a {
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    text-overflow: ellipsis;
+  }
+}

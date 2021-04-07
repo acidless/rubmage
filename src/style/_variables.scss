@@ -1,0 +1,29 @@
+html {
+  --font-family-sans-serif: 'Nunito', sans-serif;
+
+  --blue: #44a5f2;
+  --purple: #7157b8;
+  --red: #e3342f;
+  --orange: #f55636;
+  --gray: #4f4f4f;
+}
+
+.app-container[data-theme='dark'] {
+  --body-bg: #242424;
+  --text-color: white;
+  --block-bg: #242833;
+  --input-bg: #2f333f;
+  --button-bg: #303642;
+
+  --header-bg: #171717;
+  --menu-bg: #1c1c1c;
+}
+
+.app-container[data-theme='light'] {
+  --body-bg: #dbdbdb;
+  --text-color: #575656;
+  --block-bg: #878787;
+
+  --header-bg: #cfcfcf;
+  --menu-bg: #d6d6d6;
+}

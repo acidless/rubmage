@@ -1,0 +1,58 @@
+.message-wrapper {
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+
+  &__no-messages {
+    flex: 1;
+    user-select: none;
+    align-items: center;
+
+    .flex-container {
+      flex-direction: column;
+      span {
+        font-size: 15em;
+        margin-bottom: 0.1em;
+      }
+    }
+  }
+
+  &__current-dialog {
+    background: var(--header-bg);
+    width: 100%;
+    padding: 1em;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+
+    .current-dialog__info {
+      margin-bottom: 0.5em;
+
+      img {
+        margin-right: 1em;
+      }
+    }
+
+    .current-dialog__members {
+      color: var(--gray);
+      font-size: 1.5em;
+    }
+  }
+
+  &__messages {
+    width: 100%;
+    flex: 1;
+    overflow: auto;
+    padding: 0 1.5em 1.5em 1.5em;
+    flex-direction: column;
+  }
+
+  .message-form {
+    width: 100%;
+    background: var(--header-bg);
+
+    input {
+      padding: 0.5em;
+      width: 100%;
+    }
+  }
+}

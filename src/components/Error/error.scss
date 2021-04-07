@@ -1,0 +1,25 @@
+.global-error {
+  background: var(--red);
+  position: fixed;
+  top: 3em;
+  left: 50%;
+  transform: translateX(-50%) translateY(-300%);
+  align-items: stretch;
+  z-index: 1000;
+  width: max-content;
+  transition: 0.5s transform ease-in-out;
+
+  &.active {
+    transform: translateX(-50%) translateY(0%);
+  }
+
+  // Текст ошибки
+  &__info {
+    padding: 1em;
+
+    .global-error__message {
+      color: var(--text-color);
+      font-size: 1.8em;
+    }
+  }
+}

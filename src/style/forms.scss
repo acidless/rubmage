@@ -1,0 +1,35 @@
+.form-container {
+	padding: 1em;
+
+	form {
+		padding-top: 1em;
+
+		> div:not(:last-child) {
+			margin-bottom: 1em;
+		}
+
+		input {
+			width: 100%;
+		}
+
+		button {
+			width: 100%;
+			color: var(--text-color);
+			font-size: 1.5em;
+		}
+	}
+	
+	.form-error {
+		p {
+			color: white;
+		}
+		div {
+			margin-top: 0.25em;
+			align-self: flex-start;
+		}
+
+		padding: 0.5em;
+		flex-direction: column;
+		background: var(--red);
+	}
+}

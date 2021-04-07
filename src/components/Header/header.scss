@@ -1,0 +1,41 @@
+.header__topbar {
+  -webkit-app-region: drag;
+  justify-content: space-between;
+  background: var(--header-bg);
+  user-select: none;
+
+  border-top: 0.2em solid var(--orange);
+
+  .topbar__logo {
+    margin-left: 1em;
+
+    span {
+      font-size: 1.5em;
+      text-transform: uppercase;
+      font-family: 'Archive', sans-serif;
+      color: var(--gray);
+    }
+  }
+
+  .topbar__buttons {
+    .topbar__button {
+      -webkit-app-region: none;
+      border-radius: 0;
+      padding: 0.2em;
+      transition: 0.3s all ease-in-out;
+
+      &:hover {
+        background: var(--block-bg);
+      }
+    }
+
+    .topbar__close-button {
+      span {
+        transition: 0.3s color ease-in-out;
+      }
+      &:hover span {
+        color: var(--red);
+      }
+    }
+  }
+}

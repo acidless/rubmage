@@ -1,0 +1,68 @@
+.menu-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  z-index: 100;
+  pointer-events: none;
+  transition: 0.3s opacity ease-in-out;
+
+  .menu {
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30em;
+    background: var(--header-bg);
+    transform: translateX(-100%);
+    transition: 0.3s transform ease-in-out;
+    flex-direction: column;
+    align-items: stretch;
+
+    &__profile-info {
+      flex: 1;
+      padding: 2em;
+
+      .profile-info__avatar {
+        user-select: none;
+
+        img {
+          margin-right: 1em;
+        }
+      }
+      .profile-info__name p {
+        font-size: 2em;
+        font-weight: bold;
+      }
+    }
+
+    &__settings {
+      background: var(--menu-bg);
+      padding: 0.5em;
+
+      a {
+        span {
+          transition: 0.5s transform ease-in-out;
+        }
+
+        &:hover {
+          span {
+            transform: rotateZ(180deg);
+          }
+        }
+      }
+    }
+  }
+
+  &.active {
+    opacity: 1;
+    pointer-events: auto;
+
+    .menu {
+      transform: translateX(0%);
+    }
+  }
+}

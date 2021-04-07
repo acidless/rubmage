@@ -1,0 +1,38 @@
+.checkbox {
+  width: 4em;
+  height: 2em;
+  cursor: pointer;
+  border-radius: 5em;
+  background: var(--header-bg);
+  position: relative;
+
+  input {
+    z-index: 100;
+    opacity: 0;
+    width: 100%;
+    cursor: pointer;
+    height: 100%;
+  }
+
+  &.checked {
+    .checkbox__value {
+      right: 0;
+    }
+  }
+
+  &.unchecked {
+    .checkbox__value {
+      right: 50%;
+    }
+  }
+
+  &__value {
+    top: 0;
+    height: 2em;
+    width: 2em;
+    position: absolute;
+    border-radius: 5em;
+    background: var(--orange);
+    transition: 0.3s all ease-in-out;
+  }
+}

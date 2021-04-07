@@ -1,0 +1,32 @@
+.message {
+  max-width: 50%;
+  background: var(--menu-bg);
+  padding: 1.5em;
+  border-radius: 1em;
+
+  &:not(:last-child) {
+    margin-bottom: 1.5em;
+  }
+
+  &.right {
+    align-self: flex-end;
+
+    time {
+      text-align: left;
+    }
+  }
+  &.left {
+    align-self: flex-start;
+    time {
+      text-align: right;
+    }
+  }
+
+  time {
+    user-select: none;
+    margin-top: 0.25em;
+    display: block;
+    color: var(--gray);
+    font-size: 1.3em;
+  }
+}
